@@ -5,4 +5,4 @@
 
 ## Index
 
-* [Python](Java/Java.md)
+* [Java](Java/Java.md)
