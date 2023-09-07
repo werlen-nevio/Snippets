@@ -1,0 +1,302 @@
+{
+	"Hello World": {
+		"prefix": "Hello World",
+		"body": [
+			"public class HelloWorld {",
+			"\tpublic static void main(String[] args) {",
+			"\t\tSystem.out.println(\"Hello, World!\");",
+			"\t}",
+			"}"
+		],
+		"description": "Hello World"
+	},
+	"Scanner": {
+		"prefix": "Scanner",
+		"body": [
+			"import java.util.Scanner;",
+			"",
+			"\t\tScanner ${1:Scanner Name} = new Scanner(System.in);",
+			"\t\tSystem.out.println('${2:Question}');",
+			"",
+			"\t\tString '${3:VarName}' = ${1:Scanner Name}.nextLine();",
+			"\t\tSystem.out.println('${4:Sentence}' + ${3:VarName});",
+			"$5"
+		],
+		"description": "Scanner"
+	},
+	"Variables": {
+		"prefix": "Variables",
+		"body": [
+			"String ${1:VarName} = \"${2:Value}\";",
+			"int ${3:VarName} = ${4:Value};"
+		],
+		"description": "Variables"
+	},
+	"Conditional Statements": {
+		"prefix": "Conditional Statements",
+		"body": [
+			"if (${1:Condition}) {",
+			"\t${2:Code}",
+			"} else {",
+			"\t${3:Code}",
+			"}"
+		],
+		"description": "Conditional Statements"
+	},
+	"For loop": {
+		"prefix": "For loop",
+		"body": [
+			"for (int ${1:i} = 0; ${1:i} < ${2:10}; ${1:i}++) {",
+			"\t${3:Code}",
+			"}"
+		],
+		"description": "For loop"
+	},
+	"While loop": {
+		"prefix": "While loop",
+		"body": [
+			"int ${1:count} = 0;",
+			"while (${1:count} < ${2:10}) {",
+			"\tSystem.out.println(${1:count});",
+			"\t${1:count}++;",
+			"}"
+		],
+		"description": "While loop"
+	},
+	"Array": {
+		"prefix": "Array",
+		"body": [
+			"int[] ${1:arrayName} = {${2:1}, ${3:2}, ${4:3}};"
+		],
+		"description": "Array"
+	},
+	"Array access": {
+		"prefix": "Array access",
+		"body": [
+			"int ${1:firstElement} = ${2:myArray}[0];"
+		],
+		"description": "Array access"
+	},
+	"Methods": {
+		"prefix": "Methods",
+		"body": [
+			"public static ${1:void} ${2:methodName}(${3:arguments}) {",
+			"\t${4:Code}",
+			"}"
+		],
+		"description": "Methods"
+	},
+	"File reading": {
+		"prefix": "File reading",
+		"body": [
+			"import java.nio.file.*;",
+			"String ${1:content} = Files.readString(Paths.get(\"${2:file.txt}\"));"
+		],
+		"description": "File reading"
+	},
+	"File writing": {
+		"prefix": "File writing",
+		"body": [
+			"import java.nio.file.*;",
+			"Files.write(Paths.get(\"${1:output.txt}\"), \"${2:Hello, World!}\".getBytes());"
+		],
+		"description": "File writing"
+	},
+	"Exeption Handling": {
+		"prefix": "Exeption Handling",
+		"body": [
+			"try {",
+			"\t${1:Code}",
+			"} catch (${2:Exception} ${3:e}) {",
+			"\t${4:Code}",
+			"}"
+		],
+		"description": "Exeption Handling"
+	},
+	"Classes and Object": {
+		"prefix": "Classes and Object",
+		"body": [
+			"public class ${1:ClassName} {",
+			"\t${2:Code}",
+			"}",
+			"",
+			"${1:ClassName} ${3:objectName} = new ${1:ClassName}();"
+		],
+		"description": "Classes and Object"
+	},
+	"Object creation": {
+		"prefix": "Object creation",
+		"body": [
+			"${1:ClassName} ${2:objectName} = new ${1:ClassName}();"
+		],
+		"description": "Object creation"
+	},
+	"Object methods": {
+		"prefix": "Object methods",
+		"body": [
+			"public void ${1:methodName}() {",
+			"\t${2:Code}",
+			"}"
+		],
+		"description": "Object methods"
+	},
+	"Sorting arrays": {
+		"prefix": "Sorting arrays",
+		"body": [
+			"import java.util.Arrays;",
+			"int[] sortedNumbers = Arrays.copyOf(${1:numbers}, ${1:numbers}.length);",
+			"Arrays.sort(sortedNumbers);"
+		],
+		"description": "Sorting arrays"
+	},
+	"List reversal": {
+		"prefix": "List reversal",
+		"body": [
+			"Collections.reverse(${1:numbersList});"
+		],
+		"description": "List reversal"
+	},
+	"List length": {
+		"prefix": "List length",
+		"body": [
+			"int listSize = ${1:numbersList}.size();"
+		],
+		"description": "List length"
+	},
+	"List removal": {
+		"prefix": "List removal",
+		"body": [
+			"${1:numbersList}.remove(${2:3});"
+		],
+		"description": "List removal"
+	},
+	"List Appending": {
+		"prefix": "List Appending",
+		"body": [
+			"${1:numbersList}.add(${2:6});"
+		],
+		"description": "List Appending"
+	},
+	"List copying": {
+		"prefix": "List copying",
+		"body": [
+			"ArrayList<Integer> copiedList = new ArrayList<>(${1:numbersList});"
+		],
+		"description": "List copying"
+	},
+	"List clearing": {
+		"prefix": "List clearing",
+		"body": [
+			"${1:numbersList}.clear();"
+		],
+		"description": "List clearing"
+	},
+	"String Splitting": {
+		"prefix": "String Splitting",
+		"body": [
+			"String[] words = ${1:text}.split(\"${2:, }\");"
+		],
+		"description": "String Splitting"
+	},
+	"String Formatting": {
+		"prefix": "String Formatting",
+		"body": [
+			"String formattedText = String.format(\"My name is %s and I am %d years old.\", ${1:name}, ${2:age});"
+		],
+		"description": "String Formatting"
+	},
+	"Math Operations": {
+		"prefix": "Math Operations",
+		"body": [
+			"int absoluteValue = Math.abs(-5);"
+		],
+		"description": "Math Operations"
+	},
+	"Random number generation": {
+		"prefix": "Random number generation",
+		"body": [
+			"import java.util.Random;",
+			"Random random = new Random();",
+			"int randomNumber = random.nextInt(100);"
+		],
+		"description": "Random number generation"
+	},
+	"Date and Time": {
+		"prefix": "Date and Time",
+		"body": [
+			"import java.time.LocalDateTime;",
+			"LocalDateTime currentTime = LocalDateTime.now();"
+		],
+		"description": "Date and Time"
+	},
+	"HashMap": {
+		"prefix": "HashMap",
+		"body": [
+			"import java.util.HashMap;",
+			"HashMap<String, Integer> ${1:scoreMap} = new HashMap<>();"
+		],
+		"description": "HashMap"
+	},
+	"Working with Date and Time": {
+		"prefix": "Working with Date and Time",
+		"body": [
+			"import java.time.LocalDate;",
+			"LocalDate today = LocalDate.now();"
+		],
+		"description": "Working with Date and Time"
+	},
+	"Database connection with JDBC": {
+		"prefix": "Database connection with JDBC",
+		"body": [
+			"import java.sql.*;",
+			"String url = \"jdbc:mysql://localhost:3306/mydb\";",
+			"String user = \"username\";",
+			"String password = \"password\";",
+			"try (Connection connection = DriverManager.getConnection(url, user, password);",
+			"\tStatement statement = connection.createStatement()) {",
+			"\tResultSet resultSet = statement.executeQuery(\"SELECT * FROM users\");",
+			"\twhile (resultSet.next()) {",
+			"\t\tString name = resultSet.getString(\"name\");",
+			"\t\tint age = resultSet.getInt(\"age\");",
+			"\t}",
+			"}"
+		],
+		"description": "Database connection with JDBC"
+	},
+	"Sending email with JavaMail API": {
+		"prefix": "Sending email with JavaMail API",
+		"body": [
+			"import javax.mail.*;",
+			"import javax.mail.internet.*;",
+			"Properties properties = new Properties();",
+			"properties.put(\"mail.smtp.host\", \"smtp.example.com\");",
+			"Session session = Session.getInstance(properties);",
+			"MimeMessage message = new MimeMessage(session);",
+			"message.setFrom(new InternetAddress(\"sender@example.com\"));",
+			"message.addRecipient(Message.RecipientType.TO, new InternetAddress(\"recipient@example.com\"));",
+			"message.setSubject(\"Test Email\");",
+			"message.setText(\"This is a test email.\");",
+			"Transport.send(message);"
+		],
+		"description": "Sending email with JavaMail API"
+	},
+	"Working with JSON": {
+		"prefix": "Working with JSON",
+		"body": [
+			"import com.google.gson.*;",
+			"JsonObject jsonObject = new JsonObject();",
+			"jsonObject.addProperty(\"name\", \"Alice\");",
+			"jsonObject.addProperty(\"age\", 25);",
+			"String jsonString = jsonObject.toString();"
+		],
+		"description": "Working with JSON"
+	},
+	"Handling Date and Time": {
+		"prefix": "Handling Date and Time",
+		"body": [
+			"import java.time.ZoneId;",
+			"ZoneId zoneId = ZoneId.of(\"America/New_York\");"
+		],
+		"description": "Handling Date and Time"
+	}
+}
