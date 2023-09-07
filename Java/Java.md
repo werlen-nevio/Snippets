@@ -1,6 +1,6 @@
 ## Java
 
-* [Download Code](/Java.code-snippets)
+* [Download Code](/java/Java.code-snippets)
 
 ### Hello World
 ```java
