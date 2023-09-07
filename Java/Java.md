@@ -1,6 +1,6 @@
 ## Java
 
-* [Download Code](/java/Java.code-snippets)
+* [Download Code](https://github.com/werlen-nevio/Snippets/blob/main/Java/Java.code-snippets)
 
 ### Hello World
 ```java
