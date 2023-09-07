@@ -1,5 +1,7 @@
 ## Java
 
+* [Download Code](/Java.code-snippets)
+
 ### Hello World
 ```java
 public class HelloWorld {
